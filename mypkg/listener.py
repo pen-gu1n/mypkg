@@ -12,7 +12,7 @@ def main():
         node.get_logger().info('待機中')
 
     req = Query.Request()             #変更: 依頼（リクエスト）を作る
-    req.name = "鈴木太郎"              #変更: 依頼に名前を入れる
+    req.name = "恵良"              #変更: 依頼に名前を入れる
     future = client.call_async(req)   #変更: 依頼を送る（返事は待たずに次へ進む）
 
     while rclpy.ok():
